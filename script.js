@@ -12,7 +12,7 @@ function counter(){
   stopped = false
   if(seconds <= 0){
     console.log("stop")
-    window.close();
+    window.open('','_self').close();
   } else {
     handle = setTimeout(()=>{
       updateSeconds(totalSeconds() - 1)
